@@ -1,0 +1,14 @@
+Rodrigo Oliveira
+"roro@hot.com", "R0dr1g0000"
+
+"fefe@hot.com", "F3rnando!"
+
+public LandingPage launchApplication() throws IOException {
+        driver = initializeBrowser();
+
+        LandingPage landingPage = new LandingPage(driver);
+        landingPage.goTo();
+        return landingPage;
+
+        //-> crio o objeto de classe para iniciar a chamada do site. No caso de teste, herdo a Base teste e crio a anotação de @Test,
+        inicializando o driver através do "LandingPage landingPage = launchApplication();"
